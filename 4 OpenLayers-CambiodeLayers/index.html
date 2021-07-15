@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="assets/css/ol.css" type="text/css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/ol.js"></script>
+
+    <title>OpenLayers</title>
+</head>
+
+<body>
+
+    <h2>Mi Mapa</h2>
+
+    <div class="grid-container">
+
+        <!-- Control de capas-->
+        <div class="grid-1">
+            <div class="sidebar">
+                <h2>Capas</h2>
+                <input type="radio" name='baseLayerRadioButton' value='OSMStandard' checked>Mapa Estandar<br>
+                <input type="radio" name='baseLayerRadioButton' value='OSMHumanitarian'>Mapa Humanitario<br>
+                <input type="radio" name='baseLayerRadioButton' value='StamenTerrain'>Mapa Estamento<br>
+            </div>
+        </div>
+
+        <!-- Mapa-->
+        <div class="grid-2">
+            <div id="map" class="map"></div>
+        </div>
+
+    </div>
+
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
